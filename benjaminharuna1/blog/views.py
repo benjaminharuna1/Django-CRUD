@@ -1,3 +1,4 @@
+from django.urls import reverse_lazy
 from django.views.generic.edit import CreateView
 from .models import Post
 
@@ -6,23 +7,23 @@ class PostLisyView:
 
 
 class PostCreateView:
-    model = Post
+    model=Post
 
 class PostCreateView:
-    model = Post
-    fields = "__all__"
-    success_url  = reverse_lazy(“blog:all”)
+    model=Post
+    fields="__all__"
+    success_url=reverse_lazy("blog:all")
 
 class PostDetailView:
-    model = Post
+    model=Post
 
 class PostUpdateView:
-    model = Post
-    fields = “__all__”
-    success_url  = reverse_lazy(“blog:all”)
+    model=Post
+    fields="__all__"
+    success_url=reverse_lazy("blog:all")
 
 class PostDeleteView:
-    model = Post
-    fields = "__all__"
+    model=Post
+    fields="__all__"
 
 
